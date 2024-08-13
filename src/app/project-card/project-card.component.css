@@ -1,0 +1,22 @@
+.cardBody{
+    min-width: 300px;
+    max-width: 300px;
+    box-shadow: 2px 2px 12px gray;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.btn{
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 8px;
+}

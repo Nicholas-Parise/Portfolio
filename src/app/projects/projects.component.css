@@ -1,0 +1,22 @@
+
+.grid-container {
+  display: grid;
+  /*grid-template-columns: auto auto auto;*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.grid-item {
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/*
+div{
+    outline-color: black;
+    outline-width: 1px;
+    outline-style: solid;
+}
+    */

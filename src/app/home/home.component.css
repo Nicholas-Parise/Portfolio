@@ -1,0 +1,26 @@
+
+div{
+    outline-color: black;
+    outline-width: 1px;
+    outline-style: solid;
+}
+
+
+.row{
+    display: flex;
+  }
+
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  .left {
+
+    min-width: 30%;
+  }
+  
+  .right {
+
+    min-width: 30%;
+  }
