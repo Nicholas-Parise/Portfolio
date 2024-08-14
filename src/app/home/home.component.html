@@ -2,42 +2,44 @@
 <div class="container">
 
 
-<div class="row">
+<div class="home-grid-container">
     
-    <div div class="column left">
+    <div div class="home-grid-item">
         <img src="" alt="" width="250px" height="250px">
 
     </div>
 
-    <div div class="column right">
+    <div div class="home-grid-item">
+        
         <p>
-            Hi I'm Nicholas parise! A Computer science undergradute student at Brock university.
-        </p>
-
-        <p>Interests</p>
+            Hi I'm Nicholas Parise! A Computer science undergradute student at Brock university.
+        
+        <br><br>
+        Areas of Interest</p>
         <ul>
             <li>AI / Machine learning</li>
             <li>Computer hardware</li>
             <li>Natural Language Processing</li>
-            
+            <li>Computer Architecture</li>
+            <li>Computer Graphics</li>
         </ul>
 
     </div>
 
     
-  
 </div>
 
-<div class="row">
+<div class="home-grid-container">
     
-    <div div class="column left">
-        <h2>Featured projects</h2>
+    <div div class="home-grid-item">
+        <h2>Featured project</h2>
 
     </div>
 
-    <div div class="column right">
+    <div div class="home-grid-item">
        <h4>{{featuredProject.name}}</h4>
-
+       <img class = "image" src=" {{featuredProject.pictures[0]}}" alt="">
+        <p>{{featuredProject.summary}}</p>
     </div>
 
 
