@@ -47,3 +47,54 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     text-align: center;
       justify-content: center;
   }
+
+
+  .js-icon{
+    -webkit-mask-image: url(assets/javascript-icon.svg);
+    mask-image: url(assets/javascript-icon.svg);
+  }
+
+  .cpp-icon{
+    -webkit-mask-image: url(assets/cplusplus-icon.svg);
+    mask-image: url(assets/cplusplus-icon.svg);
+  }
+
+  .css-icon{
+    -webkit-mask-image: url(assets/css3-icon.svg);
+    mask-image: url(assets/css3-icon.svg);
+  }
+
+  .html-icon{
+    -webkit-mask-image: url(assets/HTML5-icon.svg);
+    mask-image: url(assets/HTML5-icon.svg);
+  }
+
+  .java-icon{
+    -webkit-mask-image: url(assets/java-icon.svg);
+    mask-image: url(assets/java-icon.svg);
+  }
+
+  .sql-icon{
+    -webkit-mask-image: url(assets/mysql-icon.svg);
+    mask-image: url(assets/mysql-icon.svg);
+  }
+
+  .angular-icon{
+    -webkit-mask-image: url(assets/angular-icon.svg);
+    mask-image: url(assets/angular-icon.svg);
+  }
+
+  .powerAuto-icon{
+    -webkit-mask-image: url(assets/PowerA-icon.svg);
+    mask-image: url(assets/PowerA-icon.svg);
+  }
+
+  .github-icon{
+    -webkit-mask-image: url(assets/github-icon.svg);
+    mask-image: url(assets/github-icon.svg);
+  }
+
+  .linkedin-icon{
+    -webkit-mask-image: url(assets/linkedin-icon.svg);
+    mask-image: url(assets/linkedin-icon.svg);
+  }

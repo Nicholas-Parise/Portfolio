@@ -30,3 +30,39 @@ grid-template-columns: repeat(auto-fill, minmax(400px, max-content));
   .home-grid-item{
     display:block;
   }
+
+
+
+.icon-grid-container{
+    margin-top: 80px;
+    height: fit-content;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+  .icon-background{
+    height: 50px;
+    width: 50px;
+    -webkit-mask-size: 50px 50px;
+    background: black;
+    margin-bottom: 20px;
+  }
+
+  .icon-holder{
+    background-color: lightblue;
+    color: black;
+    box-sizing: border-box;
+    padding: 20px;
+    width: clamp(0px, 50%, 200px);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    margin: 2px;
+}
