@@ -7,10 +7,13 @@ body{
   }
 
   html{
-    background: rgb(27,27,161);
-    background: -moz-linear-gradient(137deg, rgba(27,27,161,1), rgba(1,142,255,1)) fixed;
-    background: -webkit-linear-gradient(137deg, rgba(27,27,161,1), rgba(1,142,255,1)) fixed;
-    background: linear-gradient(137deg, rgba(27,27,161,1), rgba(1,142,255,1)) fixed;
+    
+    background: rgb(95,97,215);
+    background: -moz-linear-gradient(137deg, rgba(95,97,215,1) , rgba(85,180,255,1) ) fixed;
+    background: -webkit-linear-gradient(137deg, rgba(95,97,215,1) , rgba(85,180,255,1) ) fixed;
+    background: linear-gradient(137deg, rgba(95,97,215,1) , rgba(85,180,255,1) ) fixed;
+  
+  
   }
 
 
