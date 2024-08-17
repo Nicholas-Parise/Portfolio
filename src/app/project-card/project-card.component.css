@@ -21,6 +21,10 @@
     border-radius: 8px;
 }
 
+.btn:hover{
+    background-color: #00e490;
+}
+
 .image{
     max-width:250px;
     max-height:250px;

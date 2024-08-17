@@ -1,6 +1,56 @@
-.resume{
-    height:100%;
-    width:clamp(400px,100vw,800px); 
-    margin : 0 auto; 
+.resume{ 
     display:block;
+    color: white;
+    font-size:12pt;
+    line-height:115%;
+}
+
+
+li {
+    margin: 10px 0;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  h3{
+    font-weight: bold;
+  }
+
+
+  .date{
+    float: right;
+    display: inline;
+  }
+
+
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.download{
+
+    text-align: center;
+
+}
+
+  .btn{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    background-color: #00e490;
 }
