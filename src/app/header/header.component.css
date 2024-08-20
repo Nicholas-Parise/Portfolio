@@ -1,4 +1,44 @@
 .headerBackground{
     background-color: rgba(240, 248, 255,0.1);
     padding: 2rem 1rem;
+    color: white;
+}
+
+h1{
+    font-size: 50px;
+}
+
+
+svg{
+    width: clamp(200px, 70%, 600px);
+}
+
+
+svg path{
+    stroke-dasharray: 3677;
+    stroke-dashoffset: 3677;
+    animation: 3s draw forwards;
+}
+
+
+svg g{
+    fill-opacity: 0;
+    animation: 3s fill-ani forwards;
+}
+
+
+@keyframes draw{
+    0%{
+        stroke-dashoffset: 3677;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+
+@keyframes fill-ani{
+    to{
+        fill-opacity: 1;
+    }
 }

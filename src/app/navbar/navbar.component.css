@@ -1,4 +1,11 @@
+
+nav{
+  text-align: center;
+}
+
 ul {
+    display: inline-block;
+  
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -11,17 +18,17 @@ ul {
   
   li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover {
-    background-color: #d3faff;
+    background-color: #4e50d3;
   }
   
 
 .selected{
-    background-color: #9da7fd;
+    background-color: #4143d0;
 }
