@@ -4,16 +4,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    color:white;
   }
 
-  html{
-    
+  html{ 
     background: rgb(95,97,215);
     background: -moz-linear-gradient(137deg, rgba(95,97,215,1) , rgba(85,180,255,1) ) fixed;
     background: -webkit-linear-gradient(137deg, rgba(95,97,215,1) , rgba(85,180,255,1) ) fixed;
     background: linear-gradient(137deg, rgba(95,97,215,1) , rgba(85,180,255,1) ) fixed;
-  
-  
   }
 
 
@@ -103,8 +101,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 
   .sql-icon{
-    -webkit-mask-image: url(assets/mysql-icon.svg);
-    mask-image: url(assets/mysql-icon.svg);
+    -webkit-mask-image: url(assets/Postgresql-icon.svg);
+    mask-image: url(assets/Postgresql-icon.svg);
   }
 
   .angular-icon{
@@ -117,6 +115,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     mask-image: url(assets/PowerA-icon.svg);
   }
 
+
+  .android-icon{
+    -webkit-mask-image: url(assets/android-icon.svg);
+    mask-image: url(assets/android-icon.svg);
+  }
+
+
+  .python-icon{
+    -webkit-mask-image: url(assets/python-icon.svg);
+    mask-image: url(assets/python-icon.svg);
+  }
+
+
   .github-icon{
     -webkit-mask-image: url(assets/github-icon.svg);
     mask-image: url(assets/github-icon.svg);
@@ -126,3 +137,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     -webkit-mask-image: url(assets/linkedin-icon.svg);
     mask-image: url(assets/linkedin-icon.svg);
   }
+
+
+

@@ -4,6 +4,27 @@
     color: white;
 }
 
+
+.subTitle{
+    display: flex;
+}
+
+.icon-holder{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.icon-background{
+    height: 35px;
+    width: 35px;
+    -webkit-mask-size: 35px 35px;
+    background: black;
+  }
+
+
+
+
 h1{
     font-size: 50px;
 }
@@ -17,7 +38,7 @@ svg{
 svg path{
     stroke-dasharray: 3677;
     stroke-dashoffset: 3677;
-    animation: 3s draw forwards;
+    animation: 5s draw forwards;
 }
 
 
