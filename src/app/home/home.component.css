@@ -7,12 +7,7 @@ div{
 */ 
 
 
-ul{
-  font-size: 20px;
-}
-
-
-p{
+ul,p{
   font-size: 20px;
 }
 
@@ -29,8 +24,7 @@ p{
 
 .home-grid-container {
   display: grid;
-  /*grid-template-columns: repeat(auto-fill, [col-start] minmax(300px, 1fr) [col-end]);
-*/
+  /*grid-template-columns: repeat(auto-fill, [col-start] minmax(300px, 1fr) [col-end]);*/
   grid-template-columns: repeat(auto-fill, minmax(300px, max-content));
   /*grid-template-columns: repeat(auto-fill, minmax(min-content, 500px));*/
 
@@ -52,8 +46,6 @@ p{
     display:block;
     max-width: 100%;
   }
-
-
 
 
   .icon-grid-container{
