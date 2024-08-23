@@ -7,10 +7,6 @@ div{
 */ 
 
 
-ul,p{
-  font-size: 20px;
-}
-
 
   .image{
 
@@ -21,19 +17,14 @@ ul,p{
     min-height: 100px;
 }
 
+.profile{
+  min-width: 250px;
+  max-width: 300px;
+}
+
 
 .home-grid-container {
   display: flex;
-  /*grid-template-columns: repeat(auto-fill, [col-start] minmax(300px, 1fr) [col-end]);*/
-  
-  /* this one grid-template-columns: repeat(auto-fill, minmax(300px, max-content));*/
-
-  /*grid-template-columns: repeat(auto-fill, minmax(min-content, 500px));*/
-
-/*  grid-template-columns: repeat(auto-fill, clamp(250px,min-content, 400px));*/
-
-  /*grid-template-columns: repeat(auto-fill, [col-start] max-content [col-end]);
-*/
   }
 
 
@@ -49,10 +40,15 @@ ul,p{
   }
 
 
+  h1{
+    font-size: 36px;
+  }
+
+
   .left{
-    max-width: 300px !important;
-    width: 300px !important;
-    min-width: 300px !important; 
+    max-width: 320px !important;
+    width: 320px !important;
+    min-width: 320px !important; 
   }
 
 
@@ -60,6 +56,11 @@ ul,p{
     align-items: center;
     margin: auto;
     display: block;
+  }
+
+  .home-grid-item p, ul{
+    font-size: 28px;
+    line-height: 28px;
   }
 
 
@@ -82,6 +83,7 @@ ul,p{
     flex-wrap: wrap;
     justify-content: center;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
   .icon-background{
@@ -105,4 +107,12 @@ ul,p{
     align-items: center;
     border-radius: 50px;
     margin: 2px;
+}
+
+
+.cardBody{
+  box-shadow: 2px 2px 12px gray;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(240, 248, 255,0.1);
 }
