@@ -60,7 +60,7 @@ div{
 
   .home-grid-item p, ul{
     font-size: 28px;
-    line-height: 28px;
+    line-height: 29px;
   }
 
 
@@ -90,6 +90,7 @@ div{
     height: 50px;
     width: 50px;
     -webkit-mask-size: 50px 50px;
+    mask-size: 50px 50px;
     background: black;
     margin-bottom: 20px;
   }
