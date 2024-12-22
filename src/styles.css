@@ -88,8 +88,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   
   .center{
     text-align: center;
-      justify-content: center;
+    justify-content: center;
   }
+
+  .invisible{
+    display: none;
+  }
+
 
 
   .js-icon{
@@ -150,7 +155,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     mask-image: url(assets/arduino-icon.svg);
   }
 
-  
+  .typescript-icon{
+    -webkit-mask-image: url(assets/typescript-icon.svg);
+    mask-image: url(assets/typescript-icon.svg);
+  }
 
 
   .github-icon{
