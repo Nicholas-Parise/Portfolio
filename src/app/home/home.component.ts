@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit{
   }
   
   ngOnInit(): void {
-    this.featuredProject = this.projectService.GetProjectById(0);
+    this.featuredProject = this.projectService.getRandom();
 
     this.metaTagService.updateTag(
       {name:'description', content:"Hi Im Nicholas Parise and this is my portfolio full of my projects and more!"}
