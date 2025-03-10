@@ -171,5 +171,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     mask-image: url(assets/linkedin-icon.svg);
   }
 
+  .node-icon{
+    -webkit-mask-image: url(assets/Node.js_logo.svg);
+    mask-image: url(assets/Node.js_logo.svg);
+  }
 
-
+  .git-icon{
+    -webkit-mask-image: url(assets/Git_icon.svg);
+    mask-image: url(assets/Git_icon.svg);
+  }
