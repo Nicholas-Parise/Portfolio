@@ -90,6 +90,9 @@ div{
     max-width: 100%;
   }
 
+  .clickable:hover{
+    cursor: pointer;
+  }
 
   .icon-grid-container{
     height: fit-content;
