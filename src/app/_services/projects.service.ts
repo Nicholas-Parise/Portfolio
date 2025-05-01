@@ -8,7 +8,7 @@ export class ProjectsService {
 
   projects: Project[] = [
     {id:0,name: 'Wishify', summary: 'Full Stack collaborative wishlist platform', description: 'collaborative wishlist platform',projectLink: 'https://github.com/Nicholas-Parise/4P02-course-project',date: 'April 2025',pictures: ['../../assets/Wishify-Interface.png','picture2']},
-    {id:1,name: 'Mandelbrot Viewer', summary: 'A C++ mandelbrot viewer using GLSL fragment sharders', description: 'A GLSL sharder mandelbrot viewer',projectLink: 'https://github.com/Nicholas-Parise/mandelbrot',date: 'April 2025',pictures: ['../../assets/mandelbrot.png','picture2']},
+    {id:1,name: 'Mandelbrot Viewer', summary: 'A C++ mandelbrot viewer using GLSL fragment sharders', description: 'A GLSL sharder mandelbrot viewer',projectLink: 'https://github.com/Nicholas-Parise/mandelbrot',date: 'April 2025',pictures: ['../../assets/mandelbrot.jpg','picture2']},
     {id:2,name: 'Nixie Tube Clock', summary: 'arduino controlled nixie tube clock with RTC', description: 'description',projectLink: 'https://github.com/Nicholas-Parise/Nixie-Tube-Clock',date: 'March 2025',pictures: ['../../assets/Nixie-Tube-Clock.jpg','picture2']},
     {id:3,name: 'TicTacToe', summary: 'A networked TicTacToe game written in java', description: 'description',projectLink: 'https://github.com/Nicholas-Parise/Tic-Tac-Toe',date: 'December 2024',pictures: ['../../assets/TicTacToe.png','picture2']},
     {id:4,name: 'Class Scheduler', summary: 'Genetic Algorithms and their application in creating university class schedules', description: 'description',projectLink: 'https://github.com/Nicholas-Parise/class-scheduling/',date: 'November 2024',pictures: ['../../assets/AverageFitness-T1.png','picture2']},
