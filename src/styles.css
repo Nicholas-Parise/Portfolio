@@ -98,85 +98,85 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
   .js-icon{
-    -webkit-mask-image: url(assets/javascript-icon.svg);
-    mask-image: url(assets/javascript-icon.svg);
+    -webkit-mask-image: url(assets/icons/javascript-icon.svg);
+    mask-image: url(assets/icons/javascript-icon.svg);
   }
 
   .cpp-icon{
-    -webkit-mask-image: url(assets/cplusplus-icon.svg);
-    mask-image: url(assets/cplusplus-icon.svg);
+    -webkit-mask-image: url(assets/icons/cplusplus-icon.svg);
+    mask-image: url(assets/icons/cplusplus-icon.svg);
   }
 
   .css-icon{
-    -webkit-mask-image: url(assets/css3-icon.svg);
-    mask-image: url(assets/css3-icon.svg);
+    -webkit-mask-image: url(assets/icons/css3-icon.svg);
+    mask-image: url(assets/icons/css3-icon.svg);
   }
 
   .html-icon{
-    -webkit-mask-image: url(assets/HTML5-icon.svg);
-    mask-image: url(assets/HTML5-icon.svg);
+    -webkit-mask-image: url(assets/icons/HTML5-icon.svg);
+    mask-image: url(assets/icons/HTML5-icon.svg);
   }
 
   .java-icon{
-    -webkit-mask-image: url(assets/java-icon.svg);
-    mask-image: url(assets/java-icon.svg);
+    -webkit-mask-image: url(assets/icons/java-icon.svg);
+    mask-image: url(assets/icons/java-icon.svg);
   }
 
   .sql-icon{
-    -webkit-mask-image: url(assets/Postgresql-icon.svg);
-    mask-image: url(assets/Postgresql-icon.svg);
+    -webkit-mask-image: url(assets/icons/Postgresql-icon.svg);
+    mask-image: url(assets/icons/Postgresql-icon.svg);
   }
 
   .angular-icon{
-    -webkit-mask-image: url(assets/angular-icon.svg);
-    mask-image: url(assets/angular-icon.svg);
+    -webkit-mask-image: url(assets/icons/angular-icon.svg);
+    mask-image: url(assets/icons/angular-icon.svg);
   }
 
   .powerAuto-icon{
-    -webkit-mask-image: url(assets/PowerA-icon.svg);
-    mask-image: url(assets/PowerA-icon.svg);
+    -webkit-mask-image: url(assets/icons/PowerA-icon.svg);
+    mask-image: url(assets/icons/PowerA-icon.svg);
   }
 
 
   .android-icon{
-    -webkit-mask-image: url(assets/android-icon.svg);
-    mask-image: url(assets/android-icon.svg);
+    -webkit-mask-image: url(assets/icons/android-icon.svg);
+    mask-image: url(assets/icons/android-icon.svg);
   }
 
 
   .python-icon{
-    -webkit-mask-image: url(assets/python-icon.svg);
-    mask-image: url(assets/python-icon.svg);
+    -webkit-mask-image: url(assets/icons/python-icon.svg);
+    mask-image: url(assets/icons/python-icon.svg);
   }
 
 
   .arduino-icon{
-    -webkit-mask-image: url(assets/arduino-icon.svg);
-    mask-image: url(assets/arduino-icon.svg);
+    -webkit-mask-image: url(assets/icons/arduino-icon.svg);
+    mask-image: url(assets/icons/arduino-icon.svg);
   }
 
   .typescript-icon{
-    -webkit-mask-image: url(assets/typescript-icon.svg);
-    mask-image: url(assets/typescript-icon.svg);
+    -webkit-mask-image: url(assets/icons/typescript-icon.svg);
+    mask-image: url(assets/icons/typescript-icon.svg);
   }
 
 
   .github-icon{
-    -webkit-mask-image: url(assets/github-icon.svg);
-    mask-image: url(assets/github-icon.svg);
+    -webkit-mask-image: url(assets/icons/github-icon.svg);
+    mask-image: url(assets/icons/github-icon.svg);
   }
 
   .linkedin-icon{
-    -webkit-mask-image: url(assets/linkedin-icon.svg);
-    mask-image: url(assets/linkedin-icon.svg);
+    -webkit-mask-image: url(assets/icons/linkedin-icon.svg);
+    mask-image: url(assets/icons/linkedin-icon.svg);
   }
 
   .node-icon{
-    -webkit-mask-image: url(assets/Node.js_logo.svg);
-    mask-image: url(assets/Node.js_logo.svg);
+    -webkit-mask-image: url(assets/icons/Node.js_logo.svg);
+    mask-image: url(assets/icons/Node.js_logo.svg);
   }
 
   .git-icon{
-    -webkit-mask-image: url(assets/Git_icon.svg);
-    mask-image: url(assets/Git_icon.svg);
+    -webkit-mask-image: url(assets/icons/Git_icon.svg);
+    mask-image: url(assets/icons/Git_icon.svg);
   }

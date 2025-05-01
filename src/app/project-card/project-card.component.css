@@ -12,10 +12,12 @@ p{
     background-color: #04AA6D; /* Green */
     border: none;
     color: white;
-    padding: 12px 28px;
+    padding: 12px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     margin: 4px 2px;
     cursor: pointer;
     font-size: 12px;
@@ -31,4 +33,15 @@ p{
     max-height:250px;
     min-width: 100px;
     min-height: 100px;
+    border-radius: 6px;
 }
+
+
+.icon-background{
+    display:inline-block;
+    height: 16px;
+    width: 16px;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background: white;
+  }
