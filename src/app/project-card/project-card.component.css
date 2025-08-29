@@ -46,4 +46,9 @@ p{
     -webkit-mask-size: cover;
     mask-size: cover;
     background: white;
-  }
+}
+
+
+.hidden {
+  display: none;
+}

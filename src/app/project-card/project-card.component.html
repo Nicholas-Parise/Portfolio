@@ -1,13 +1,23 @@
-<div class="cardBody">
+<div class="cardBody" [id]="slugify(project.name)">
     <h2>{{project.name}}</h2>
-    <img class = "image" src="{{project.pictures[0]}}" alt="">
+
+    <ng-container *ngIf="hasGif; else noGif">
+    <img *ngIf="!gifLoaded" class="image" [src]="project.pictures[0]" alt="screenshot" />
+    <img class="image" [src]="project.pictures[1]" alt="gif" [class.hidden]="!gifLoaded" (load)="onGifLoad()" />
+    </ng-container>
+
+  <ng-template #noGif>
+    <img class="image" [src]="project.pictures[0]" alt="screenshot" />
+    <img *ngIf="project.pictures[1]" class="image" [src]="project.pictures[1]" alt="screenshot" />
+  </ng-template>
+
+
     <p>{{project.summary}}</p>
     <p>{{project.date}}</p>
-    <a href="{{project.projectLink}}" target="_blank"> 
+    <a href="{{project.projectLink}}" target="_blank">
         <button class="btn">
             <span class="github-icon icon-background"></span>
             View More
         </button>
     </a>
-
 </div>

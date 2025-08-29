@@ -26,6 +26,11 @@ export class HomeComponent implements OnInit{
     this.metaTagService.updateTag(
       {name:'description', content:"Hi Im Nicholas Parise and this is my portfolio full of my projects and more!"}
     );
-
   }
+
+
+  slugify(name: string): string {
+    return name.toLowerCase().replace(/\s+/g, '-');
+  }
+
 }

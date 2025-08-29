@@ -5,6 +5,7 @@ import { Project } from '../_models/Project';
 import { ProjectsService } from '../_services/projects.service';
 import { CommonModule } from '@angular/common';
 import { Meta } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -17,13 +18,26 @@ export class ProjectsComponent implements OnInit{
   
   projects = {} as Project[];
  
-  constructor(private titleService: Title, private projectService: ProjectsService, private metaTagService: Meta){
+  constructor(private titleService: Title, private projectService: ProjectsService, private metaTagService: Meta, private route: ActivatedRoute){
     this.titleService.setTitle('Projects');
   }
   ngOnInit(): void {
-    this.projects = this.projectService.GetProjects();
     this.metaTagService.updateTag(
       {name:'description', content:"View all my projects"}
     );
+    this.projects = this.projectService.GetProjects();
   }
+
+  ngAfterViewInit() {
+    this.route.fragment.subscribe(f => {
+      if (f) {
+        const el = document.getElementById(f);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    });
+  }
+
+
 }

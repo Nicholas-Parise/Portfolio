@@ -1,35 +1,29 @@
 
 <div class="container">
 
-    <h1 class="invisible">Nicholas Parise</h1>
+<h1 class="invisible">Nicholas Parise</h1>
 
 <div class="home-grid-container">
     
     <div div class="left home-grid-item">
-        <img class="profile" src="assets/profile.jpg" alt="" >
-
+        <img class="profile" src="assets/profile.jpg" alt="Profile photo">
     </div>
 
     <div div class="right home-grid-item">
         
-        <p style="margin-left: 20px;">
-            Hi I'm Nicholas Parise! A computer science undergradute student at Brock university.  
+        <h1>Hi I'm Nicholas Parise!</h1>
+        <p>
+            A computer science undergradute student at Brock university.  
             I'm continously focused on building creative and scalable solutions.
-
-        <br><br>
     </p>
-        <h1 style="margin-left: 20px;">Areas of Interest</h1>
-        
-        <ul style="margin-left: 20px;">
+        <h2>Areas of Interest</h2>        
+        <ul>
             <li>AI / Machine learning</li>
             <li>Computer hardware</li>
             <li>Computer Graphics</li>
             <li>Cyber security</li>
         </ul>
-
     </div>
-
-    
 </div>
 
 <h1 style="margin-left: 20px;">Skills</h1>
@@ -122,10 +116,12 @@
         <h1 style="margin-left: 20px;">Featured project</h1>
     </div>
 
-    <div routerLink="/projects" div class="cardBody right home-grid-item clickable">
-       <h2>{{featuredProject.name}}</h2>
-       <img class = "image" src=" {{featuredProject.pictures[0]}}" alt="">
-        <p>{{featuredProject.summary}}</p>
+    <div div class="right home-grid-item">
+        <div [routerLink]="['/projects']" fragment="{{ slugify(featuredProject.name) }}" class="cardBody clickable">
+        <h2>{{featuredProject.name}}</h2>
+        <img class = "image" src=" {{featuredProject.pictures[0]}}" alt="">
+            <p>{{featuredProject.summary}}</p>
+        </div>
     </div>
 </div>
 
