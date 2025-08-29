@@ -5,11 +5,11 @@
 
 <div class="home-grid-container">
     
-    <div div class="left home-grid-item">
+    <div class="left home-grid-item">
         <img class="profile" src="assets/profile.jpg" alt="Profile photo">
     </div>
 
-    <div div class="right home-grid-item">
+    <div class="right home-grid-item">
         
         <h1>Hi I'm Nicholas Parise!</h1>
         <p>
@@ -77,6 +77,15 @@
         Angular
     </div>
 
+    <div class = "icon-holder">
+        <div class = "icon-background react-icon"></div>
+        React
+    </div>
+
+    <div class = "icon-holder">
+        <div class = "icon-background node-icon"></div>
+        Node js
+    </div>
 
     <div class = "icon-holder">
         <div class = "icon-background arduino-icon"></div>
@@ -96,12 +105,6 @@
 
 
     <div class = "icon-holder">
-        <div class = "icon-background node-icon"></div>
-        Node js
-    </div>
-
-
-    <div class = "icon-holder">
         <div class = "icon-background git-icon"></div>
         Git
     </div>
@@ -112,11 +115,11 @@
 
 <div class="home-grid-container">
     
-    <div div class="left home-grid-item">
+    <div class="left home-grid-item">
         <h1 style="margin-left: 20px;">Featured project</h1>
     </div>
 
-    <div div class="right home-grid-item">
+    <div class="right home-grid-item">
         <div [routerLink]="['/projects']" fragment="{{ slugify(featuredProject.name) }}" class="cardBody clickable">
         <h2>{{featuredProject.name}}</h2>
         <img class = "image" src=" {{featuredProject.pictures[0]}}" alt="">

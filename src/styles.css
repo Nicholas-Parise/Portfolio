@@ -180,3 +180,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     -webkit-mask-image: url(assets/icons/Git_icon.svg);
     mask-image: url(assets/icons/Git_icon.svg);
   }
+
+  .react-icon{
+    -webkit-mask-image: url(assets/icons/React-icon.svg);
+    mask-image: url(assets/icons/React-icon.svg);
+  }
