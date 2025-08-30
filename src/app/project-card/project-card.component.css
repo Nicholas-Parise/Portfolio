@@ -2,6 +2,14 @@
 .cardBody{
     min-width: 350px;
     max-width: 350px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContent {
+  flex: 1;
 }
 
 p{

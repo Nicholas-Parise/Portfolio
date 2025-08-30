@@ -42,6 +42,7 @@ body{
     border-radius: 10px;
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
   }
+ 
 
   .cardBody:hover {
     transform: scale(1.03);
@@ -71,16 +72,22 @@ body{
       width: 1170px;
     }
   }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
+  html, body { height: 100%; }
+  body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
   }
-  
+
+  .grid-container.same-Height {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+  }
+
+
 .grid-container-four {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -91,6 +98,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
   .grid-item {
     display: flex;
+    margin-bottom: 10px;
   }
   
   .center{
