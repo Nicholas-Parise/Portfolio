@@ -1,7 +1,7 @@
 
 .cardBody{
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 350px;
+    max-width: 350px;
 }
 
 p{
@@ -9,7 +9,7 @@ p{
 }
 
 .btn{
-    background-color: #04AA6D; /* Green */
+    background-color: #04AA6D;
     border: none;
     color: white;
     padding: 12px 20px;
@@ -29,8 +29,8 @@ p{
 }
 
 .image{
-    max-width:250px;
-    max-height:250px;
+    max-width:300px;
+    max-height:300px;
     min-width: 100px;
     min-height: 100px;
     

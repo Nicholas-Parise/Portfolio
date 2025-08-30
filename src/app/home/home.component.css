@@ -41,7 +41,7 @@ div{
   }
   .right{
     padding-top: 10px;
-    margin-left: 0;
+    margin-left: auto;
   }
   ul {
     list-style: none;

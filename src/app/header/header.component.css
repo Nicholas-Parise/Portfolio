@@ -33,7 +33,7 @@ h1{
 
 
 svg{
-    width: clamp(200px, 70%, 600px);
+    width: clamp(150px, 70%, 600px);
 }
 
 

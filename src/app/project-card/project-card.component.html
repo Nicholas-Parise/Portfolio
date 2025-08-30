@@ -1,4 +1,4 @@
-<div class="cardBody" [id]="slugify(project.name)">
+<div class="cardBody center" [id]="slugify(project.name)">
     <h2>{{project.name}}</h2>
 
     <ng-container *ngIf="hasGif; else noGif">
@@ -10,7 +10,6 @@
     <img class="image" [src]="project.pictures[0]" alt="screenshot" />
     <img *ngIf="project.pictures[1]" class="image" [src]="project.pictures[1]" alt="screenshot" />
   </ng-template>
-
 
     <p>{{project.summary}}</p>
     <p>{{project.date}}</p>
