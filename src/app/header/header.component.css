@@ -19,6 +19,7 @@
     height: 37px;
     width: 37px;
     -webkit-mask-size: 37px 37px;
+    mask-size: 37px 37px;
     background: black;
   }
 
