@@ -24,7 +24,7 @@
   </div>
 
   <div class="btn-holder">
-    <a href="{{project.projectLink}}" target="_blank">
+    <a *ngIf="project.projectLink" href="{{project.projectLink}}" target="_blank">
       <button class="btn">
           <span class="github-icon icon-background"></span>
           View More
