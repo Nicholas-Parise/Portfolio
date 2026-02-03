@@ -28,7 +28,7 @@ export class ProjectsService {
     { id: 16, name: 'Connect 4', summary: 'A networked Connect four game written in java', description: 'description', projectLink: 'https://github.com/Nicholas-Parise/Connect-Four', liveLink: null, date: 'July 2023', pictures: ['../../assets/projects/Connect4.png'],skills: [this.skillsService.GetSkillByName("Java")] },
     { id: 17, name: 'Pacman', summary: 'A C++ SFML Pacman clone', description: 'description', projectLink: 'https://github.com/Nicholas-Parise/PacMan', liveLink: null, date: 'June 2022', pictures: ['../../assets/projects/Pacman.png'],skills: [this.skillsService.GetSkillByName("C++"),this.skillsService.GetSkillByName("SFML")] },
     { id: 18, name: 'Tetris', summary: 'A java Jpanel clone of classic Tetris', description: 'description', projectLink: 'https://github.com/Nicholas-Parise/Tetris-Java', liveLink: null, date: 'January 2021', pictures: ['../../assets/projects/tetris.png'],skills: [this.skillsService.GetSkillByName("Java")] },
-    { id: 19, name: 'Tetris', summary: 'Galaga Flash game I made in highschool', description: 'description', projectLink: null, liveLink: '/games', date: 'January 2018', pictures: ['../../assets/projects/galaga.png'],skills: [] }
+    { id: 19, name: 'Galaga', summary: 'Galaga Flash game I made in highschool', description: 'description', projectLink: null, liveLink: '/games', date: 'January 2018', pictures: ['../../assets/projects/galaga.png'],skills: [] }
   ];
   //written
   //{id:5,name: 'name', summary: 'summary', description: 'description',projectLink: 'link',date: 'date',pictures: ['picture1','picture2']}
@@ -50,7 +50,7 @@ export class ProjectsService {
   }
 
   getRandom(): Project {
-    return this.GetProjectById(Math.floor(Math.random() * this.projects.length));
+    return this.GetProjectById(Math.floor(Math.random() * (this.projects.length-1)));
   }
 
 
