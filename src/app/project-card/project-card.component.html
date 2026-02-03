@@ -17,10 +17,27 @@
 
   </div>
 
-  <a href="{{project.projectLink}}" target="_blank">
+  <div class="skil-holder">
+      <span *ngFor="let skill of project.skills">
+            <app-skill-card [skill]="skill" [tiny] = true></app-skill-card>
+        </span>
+  </div>
+
+  <div class="btn-holder">
+    <a href="{{project.projectLink}}" target="_blank">
       <button class="btn">
           <span class="github-icon icon-background"></span>
           View More
       </button>
   </a>
+  
+  <a *ngIf="project.liveLink" href="{{project.liveLink}}" target="_blank">
+      <button class="btn">
+          <span class="OpenInNew-icon icon-background"></span>
+          Live Website
+      </button>
+  </a>
+
+  </div>
+
 </div>

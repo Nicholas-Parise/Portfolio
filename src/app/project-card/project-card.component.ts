@@ -1,11 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { Project } from '../_models/Project';
 import { CommonModule } from '@angular/common';
+import { SkillCardComponent } from '../skill-card/skill-card.component';
+import { Skill } from '../_models/Skill';
+
 
 @Component({
   selector: 'app-project-card',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SkillCardComponent],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.css'
 })

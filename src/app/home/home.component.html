@@ -1,135 +1,51 @@
-
 <div class="container">
 
-<h1 class="invisible">Nicholas Parise</h1>
+    <h1 class="invisible">Nicholas Parise</h1>
 
-<div class="home-grid-container">
-    
-    <div class="left home-grid-item">
-        <img class="profile" src="assets/profile.jpg" alt="Profile photo">
-    </div>
+    <div class="home-grid-container">
 
-    <div class="right home-grid-item">
-        
-        <h1>Hi I'm Nicholas Parise!</h1>
-        <p>
-            A computer science undergradute student at Brock university.  
-            I'm continously focused on building creative and scalable solutions.
-    </p>
-        <h2>Areas of Interest</h2>        
-        <ul>
-            <li>AI / Machine learning</li>
-            <li>Computer hardware</li>
-            <li>Computer Graphics</li>
-            <li>Cyber security</li>
-        </ul>
-    </div>
-</div>
+        <div class="left home-grid-item">
+            <img class="profile" src="assets/profile.jpg" alt="Profile photo">
+        </div>
 
-<h1 style="margin-left: 20px;">Skills</h1>
+        <div class="right home-grid-item">
 
-<div class = "icon-grid-container">
-
-    <div class = "icon-holder">
-        <div class = "icon-background cpp-icon"></div>
-        C++
-    </div>
-
-    <div class = "icon-holder">
-        <div class = "icon-background java-icon"></div>
-        Java
-    </div>
-
-    <div class = "icon-holder">
-        <div class = "icon-background python-icon"></div>
-        Python
-    </div>
-
-    <div class = "icon-holder">
-        <div class = "icon-background sql-icon"></div>
-        PSQL
-    </div>
-
-    <div class = "icon-holder">
-        <div class = "icon-background css-icon"></div>
-        CSS
-    </div>
-
-    <div class = "icon-holder">
-        <div class = "icon-background html-icon"></div>
-        HTML
-    </div>
-
-    <div class = "icon-holder">
-        <div class = "icon-background js-icon"></div>
-        Javascript
-    </div>
-
-
-    <div class = "icon-holder">
-        <div class = "icon-background typescript-icon"></div>
-        Typescript
-    </div>
-
-
-    <div class = "icon-holder">
-        <div class = "icon-background angular-icon"></div>
-        Angular
-    </div>
-
-    <div class = "icon-holder">
-        <div class = "icon-background react-icon"></div>
-        React
-    </div>
-
-    <div class = "icon-holder">
-        <div class = "icon-background node-icon"></div>
-        Node js
-    </div>
-
-    <div class = "icon-holder">
-        <div class = "icon-background arduino-icon"></div>
-        Arduino
-    </div>
-   
-
-    <div class = "icon-holder">
-        <div class = "icon-background android-icon"></div>
-        Android
-    </div>
-
-    <div class = "icon-holder">
-        <div class = "icon-background powerAuto-icon"></div>
-        Automate
-    </div>
-
-
-    <div class = "icon-holder">
-        <div class = "icon-background git-icon"></div>
-        Git
-    </div>
-
-
-</div>
-
-
-<div class="home-grid-container">
-    
-    <div class="left home-grid-item">
-        <h1 style="margin-left: 20px;">Featured project</h1>
-    </div>
-
-    <div class="right home-grid-item">
-        <div [routerLink]="['/projects']" fragment="{{ slugify(featuredProject.name) }}" class="cardBody clickable">
-        <h2>{{featuredProject.name}}</h2>
-        <img class = "image" src=" {{featuredProject.pictures[0]}}" alt="">
-            <p>{{featuredProject.summary}}</p>
+            <h1>Hi I'm Nicholas Parise!</h1>
+            <p>
+                A newly graduated Computer Science student from Brock university.
+                I'm continously focused on building creative and scalable solutions.
+            </p>
+            <h2>Areas of Interest</h2>
+            <ul>
+                <li>AI / Machine learning</li>
+                <li>Computer hardware</li>
+                <li>Computer Graphics</li>
+                <li>Cyber security</li>
+            </ul>
         </div>
     </div>
-</div>
+
+    <h1 style="margin-left: 20px;">Skills</h1>
+
+    <div class="icon-grid-container">
+        <span *ngFor="let skill of skills">
+            <app-skill-card [skill]="skill"></app-skill-card>
+        </span>
+    </div>
+
+    <div class="home-grid-container">
+
+        <div class="left home-grid-item">
+            <h1 style="margin-left: 20px;">Featured project</h1>
+        </div>
+
+        <div class="right home-grid-item">
+            <div [routerLink]="['/projects']" fragment="{{ slugify(featuredProject.name) }}" class="cardBody clickable">
+                <h2>{{featuredProject.name}}</h2>
+                <img class="image" src=" {{featuredProject.pictures[0]}}" alt="">
+                <p>{{featuredProject.summary}}</p>
+            </div>
+        </div>
+    </div>
 
 </div>
-
-
-
-

@@ -16,6 +16,23 @@ p{
     font-size: 15px;
 }
 
+.btn-holder{
+    
+}
+
+.skil-holder{    
+  min-width: fit-content;
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+
 .btn{
     background-color: #04AA6D;
     border: none;
