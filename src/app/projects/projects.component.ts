@@ -7,6 +7,8 @@ import { CommonModule } from '@angular/common';
 import { Meta } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 
+import { ViewportScroller } from '@angular/common';
+
 @Component({
   selector: 'app-projects',
   standalone: true,
@@ -18,7 +20,11 @@ export class ProjectsComponent implements OnInit{
   
   projects = {} as Project[];
  
-  constructor(private titleService: Title, private projectService: ProjectsService, private metaTagService: Meta, private route: ActivatedRoute){
+  constructor(private titleService: Title, 
+    private projectService: ProjectsService, 
+    private metaTagService: Meta, 
+    private route: ActivatedRoute,
+    private viewportScroller: ViewportScroller){
     this.titleService.setTitle('Projects');
   }
   ngOnInit(): void {
@@ -31,10 +37,9 @@ export class ProjectsComponent implements OnInit{
   ngAfterViewInit() {
     this.route.fragment.subscribe(f => {
       if (f) {
-        const el = document.getElementById(f);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
+        setTimeout(() => {
+          this.viewportScroller.scrollToAnchor(f);
+        });
       }
     });
   }
