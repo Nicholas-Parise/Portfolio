@@ -22,13 +22,11 @@ export class SkillsService {
     { name: 'Android', icon: 'android-icon' },
     { name: 'Automate', icon: 'powerAuto-icon' },
     { name: 'Git', icon: 'git-icon' },
+    { name: 'Docker', icon: 'docker-icon' },
     { name: 'Numpy', icon: 'numpy-icon' },
     { name: 'SFML', icon: 'sfml-icon' }
   ];
 
-  /*
-  { name: '', icon: '' },
-  */
   constructor() { }
 
   GetSkills() {

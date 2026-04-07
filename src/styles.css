@@ -197,6 +197,12 @@ body{
     mask-image: url(assets/icons/sfml-icon.svg);
   }
 
+
+  .docker-icon{
+    -webkit-mask-image: url(assets/icons/docker-icon.svg);
+    mask-image: url(assets/icons/docker-icon.svg);
+  }
+
   .OpenInNew-icon{
       -webkit-mask-image: url(assets/icons/OpenInNew-icon.svg);
       mask-image: url(assets/icons/OpenInNew-icon.svg);
