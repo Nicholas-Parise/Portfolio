@@ -6,11 +6,10 @@ import { Skill } from '../_models/Skill';
 
 
 @Component({
-  selector: 'app-project-card',
-  standalone: true,
-  imports: [CommonModule, SkillCardComponent],
-  templateUrl: './project-card.component.html',
-  styleUrl: './project-card.component.css'
+    selector: 'app-project-card',
+    imports: [CommonModule, SkillCardComponent],
+    templateUrl: './project-card.component.html',
+    styleUrl: './project-card.component.css'
 })
 export class ProjectCardComponent {
   @Input() project = {} as Project

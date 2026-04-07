@@ -10,11 +10,10 @@ import { SkillCardComponent } from '../skill-card/skill-card.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [RouterModule, SkillCardComponent, CommonModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    imports: [RouterModule, SkillCardComponent, CommonModule],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit{
   

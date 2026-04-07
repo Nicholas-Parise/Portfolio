@@ -9,11 +9,10 @@ import {
 import { isPlatformBrowser } from '@angular/common'
 
 @Component({
-  selector: 'app-flash-player',
-  standalone: true,
-  imports: [],
-  template: `<div #container></div>`,
-  styleUrl: './flash-player.component.css'
+    selector: 'app-flash-player',
+    imports: [],
+    template: `<div #container></div>`,
+    styleUrl: './flash-player.component.css'
 })
 export class FlashPlayerComponent implements AfterViewInit {
   @ViewChild('container', { static: true }) container!: ElementRef;
