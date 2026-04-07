@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { Skill } from '../_models/Skill';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
     selector: 'app-skill-card',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './skill-card.component.html',
     styleUrl: './skill-card.component.css'
 })

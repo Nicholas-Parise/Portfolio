@@ -1,14 +1,13 @@
-<ng-container *ngIf="!tiny; else isTiny">
-    <div class = "icon-holder hover">
-        <div class = "icon-background {{skill.icon}}"></div>
-        {{skill.name}}
-    </div>
-</ng-container>
+@if (!tiny) {
+  <div class = "icon-holder hover">
+    <div class = "icon-background {{skill.icon}}"></div>
+    {{skill.name}}
+  </div>
+} @else {
+  <div class = "tiny-icon-holder hover" >
+    <div class = "tiny-icon-background {{skill.icon}}"></div>
+    {{skill.name}}
+  </div>
+}
 
 
-<ng-template #isTiny>
-    <div class = "tiny-icon-holder hover" >
-        <div class = "tiny-icon-background {{skill.icon}}"></div>
-        {{skill.name}}
-    </div>
-</ng-template>

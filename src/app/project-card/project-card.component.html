@@ -2,15 +2,18 @@
   <div class="cardContent">
     <h2>{{project.name}}</h2>
 
-    <ng-container *ngIf="hasGif; else noGif">
-      <img *ngIf="!gifLoaded" class="image" [src]="project.pictures[0]" alt="screenshot" />
+    @if (hasGif) {
+      @if (!gifLoaded) {
+        <img class="image" [src]="project.pictures[0]" alt="screenshot" />
+      }
       <img class="image" [src]="project.pictures[1]" alt="gif" [class.hidden]="!gifLoaded" (load)="onGifLoad()" />
-    </ng-container>
-
-    <ng-template #noGif>
+    } @else {
       <img class="image" [src]="project.pictures[0]" alt="screenshot" />
-      <img *ngIf="project.pictures[1]" class="image" [src]="project.pictures[1]" alt="screenshot" />
-    </ng-template>
+      @if (project.pictures[1]) {
+        <img class="image" [src]="project.pictures[1]" alt="screenshot" />
+      }
+    }
+
 
     <p>{{project.summary}}</p>
     <p>{{project.date}}</p>
@@ -18,25 +21,31 @@
   </div>
 
   <div class="skil-holder">
-      <span *ngFor="let skill of project.skills">
-            <app-skill-card [skill]="skill" [tiny] = true></app-skill-card>
-        </span>
+    @for (skill of project.skills; track skill) {
+      <span>
+        <app-skill-card [skill]="skill" [tiny] = true></app-skill-card>
+      </span>
+    }
   </div>
 
   <div class="btn-holder">
-    <a *ngIf="project.projectLink" href="{{project.projectLink}}" target="_blank">
-      <button class="btn">
+    @if (project.projectLink) {
+      <a href="{{project.projectLink}}" target="_blank">
+        <button class="btn">
           <span class="github-icon icon-background"></span>
           View More
-      </button>
-  </a>
-  
-  <a *ngIf="project.liveLink" href="{{project.liveLink}}" target="_blank">
-      <button class="btn">
+        </button>
+      </a>
+    }
+
+    @if (project.liveLink) {
+      <a href="{{project.liveLink}}" target="_blank">
+        <button class="btn">
           <span class="OpenInNew-icon icon-background"></span>
           Live Website
-      </button>
-  </a>
+        </button>
+      </a>
+    }
 
   </div>
 

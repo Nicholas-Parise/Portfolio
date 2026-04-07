@@ -7,11 +7,11 @@ import { Meta } from "@angular/platform-browser"
 import { SkillsService } from '../_services/skills.service';
 import { Skill } from '../_models/Skill';
 import { SkillCardComponent } from '../skill-card/skill-card.component';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
     selector: 'app-home',
-    imports: [RouterModule, SkillCardComponent, CommonModule],
+    imports: [RouterModule, SkillCardComponent],
     templateUrl: './home.component.html',
     styleUrl: './home.component.css'
 })

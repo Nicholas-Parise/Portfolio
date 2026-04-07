@@ -3,7 +3,7 @@ import {Title} from '@angular/platform-browser'
 import { ProjectCardComponent } from "../project-card/project-card.component";
 import { Project } from '../_models/Project';
 import { ProjectsService } from '../_services/projects.service';
-import { CommonModule } from '@angular/common';
+
 import { Meta } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 
@@ -11,7 +11,7 @@ import { ViewportScroller } from '@angular/common';
 
 @Component({
     selector: 'app-projects',
-    imports: [ProjectCardComponent, CommonModule],
+    imports: [ProjectCardComponent],
     templateUrl: './projects.component.html',
     styleUrl: './projects.component.css'
 })

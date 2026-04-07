@@ -1,7 +1,9 @@
 <div class="container">
-    <div class="spacer grid-container same-Height">
-        <div class="center grid-item" *ngFor="let project of projects">
-            <app-project-card [project]="project"></app-project-card>
-        </div>
-    </div>
+  <div class="spacer grid-container same-Height">
+    @for (project of projects; track project) {
+      <div class="center grid-item">
+        <app-project-card [project]="project"></app-project-card>
+      </div>
+    }
+  </div>
 </div>
