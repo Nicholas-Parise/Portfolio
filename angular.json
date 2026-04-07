@@ -33,8 +33,12 @@
             "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
+            "outputMode": "static",
             "ssr": {
-              "entry": "server.ts"
+              "entry": "src/server.ts"
+            },
+            "security": {
+              "allowedHosts": []
             }
           },
           "configurations": {
