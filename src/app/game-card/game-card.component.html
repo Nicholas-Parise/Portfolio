@@ -1,0 +1,11 @@
+<div class="cardBody center" [routerLink]="['/games', game.name]">
+    <div class="cardContent">
+        <h2>{{game.name}}</h2>
+
+        <img class="image" [src]="game.pictures" alt="screenshot" />
+
+        <p>{{game.description}}</p>
+        <p>{{game.date}}</p>
+
+    </div>
+</div>

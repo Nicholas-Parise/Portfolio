@@ -6,10 +6,13 @@ import { AboutComponent } from './about/about.component';
 import { GamesComponent } from './games/games.component';
 
 export const routes: Routes = [
-{path: 'home', component: HomeComponent},
-{path: 'projects', component: ProjectsComponent},
-{path: 'resume', component: ResumeComponent},
-{path: 'about', component: AboutComponent},
-{path: 'games', component: GamesComponent},
-{path: '**', component: HomeComponent, pathMatch: 'full'}
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent },
+    { path: 'projects', component: ProjectsComponent },
+    { path: 'resume', component: ResumeComponent },
+    { path: 'about', component: AboutComponent },
+    { path: 'games', component: GamesComponent },
+    { path: 'games/:id', component: GamesComponent },
+    { path: '**', component: HomeComponent
+    }
 ];

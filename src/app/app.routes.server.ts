@@ -25,5 +25,13 @@ export const serverRoutes: ServerRoute[] = [
     {
         path: 'games',
         renderMode: RenderMode.Prerender
+    },
+    {
+        path: 'games/:id',
+        renderMode: RenderMode.Client
+    },
+    {
+        path: '**',
+        renderMode: RenderMode.Prerender
     }
 ];

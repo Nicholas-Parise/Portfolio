@@ -1,7 +1,46 @@
 <div class="container">
+
     <h1>Games</h1>
-    <div class="flash-wrapper">
-        <app-flash-player></app-flash-player>
+
+    @if(selectedGame){
+
+    <button class="btn" routerLink="/games">
+        ← Back
+    </button>
+
+    <h2>{{selectedGame.name}}</h2>
+
+    <p>{{selectedGame.description}}</p>
+
+    <p>{{selectedGame.date}}</p>
+
+    @if(selectedGame.type === 'swf'){
+
+    <app-flash-player [file]="selectedGame.file">
+    </app-flash-player>
+
+    }
+
+    @if(selectedGame.type === 'jar'){
+
+    <app-jar-player [file]="selectedGame.file">
+    </app-jar-player>
+
+    }
+
+    } @else {
+
+      <div class="spacer grid-container same-Height">
+
+        @for(game of games; track game.name){
+
+        <app-game-card [game]="game">
+        </app-game-card>
+
+        }
+
     </div>
-    <span>Featured here my version of Galaga</span>
+
+    }
+
 </div>
