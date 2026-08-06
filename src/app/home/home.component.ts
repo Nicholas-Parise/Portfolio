@@ -21,16 +21,15 @@ export class HomeComponent implements OnInit{
   skills = {} as Skill[];
   
   constructor(private titleService: Title, private projectService: ProjectsService, private metaTagService: Meta, private skillsService:SkillsService){
-    this.titleService.setTitle('Home');
+    this.titleService.setTitle('My Portfolio');
   }
   
   ngOnInit(): void {
     this.featuredProject = this.projectService.getRandom();
     this.skills = this.skillsService.GetSkills();
 
-    this.metaTagService.updateTag(
-      {name:'description', content:"Hi Im Nicholas Parise and this is my portfolio full of my projects and more!"}
-    );
+    this.metaTagService.updateTag({name:'description', content:"Hi Im Nicholas Parise and this is my portfolio full of my projects and more!"});
+    this.metaTagService.updateTag({property: 'og:title', content: 'Nicholas Parise\'s portfolio - Home' });
   }
 
 

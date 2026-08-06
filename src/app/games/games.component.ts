@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+import { Title } from '@angular/platform-browser'
+import { Meta } from '@angular/platform-browser';
+
 import { RouterModule } from '@angular/router';
 
 import { FlashPlayerComponent } from '../flash-player/flash-player.component';
@@ -18,7 +21,9 @@ import { GamesService } from '../_services/games.service';
 })
 export class GamesComponent implements OnInit {
 
-    constructor(private route: ActivatedRoute, private gamesService: GamesService) { }
+    constructor(private route: ActivatedRoute, private gamesService: GamesService, private titleService: Title, private metaTagService: Meta) {
+        this.titleService.setTitle('My Games');
+    }
 
     game: string | null = null;
 
@@ -26,6 +31,16 @@ export class GamesComponent implements OnInit {
     games: Game[] = [];
 
     ngOnInit(): void {
+
+        this.metaTagService.updateTag({ name: 'description', content: "All my games" });
+
+        this.metaTagService.updateTag({ property: 'og:title', content: 'Nicholas Parise\'s portfolio - Games' });
+        this.metaTagService.updateTag({ property: 'og:image', content: 'https://nicholasparise.com/assets/projects/galaga.png' });
+        this.metaTagService.updateTag({ property: 'twitter:image', content: 'https://nicholasparise.com/assets/projects/galaga.png' });
+        this.metaTagService.updateTag({ property: 'og:image:width', content: '795' });
+        this.metaTagService.updateTag({ property: 'og:image:height', content: '594' });
+        this.metaTagService.updateTag({ property: 'og:image:type', content: 'image/png' });
+
         this.games = this.gamesService.Get();
 
         this.route.paramMap.subscribe(params => {
